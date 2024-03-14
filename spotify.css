@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #000000;
+  }
+   /* Navbar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+    border-bottom: 2px solid white;
+  }
+  ul {
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+  a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+  }
+  a .bell{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+  }
+  .profile {
+    height: 40px;
+    width: 40px;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+  }
+  .searchbar{
+    margin-top: 15px;
+    border: none;
+
+  }
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #313131;
+  }
+  /* li {
+    border-right: 1px solid #bbb;
+  } */
+  
+  li:last-child {
+    border-right: none;
+  }
+  .right {
+    float: right;
+  }
+  .active {
+    background-color: #000000;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  .cover img {
+    /* display: inline-block; */
+    width: 250px;
+    height: 250px;
+    float: left;
+    /* padding: 20px; */
+    margin-right: 10px;
+    border: 1px solid white;
+    
+  }
+  .cover img:hover {
+    width: 260px;
+    height: 260px;
+    
+  }
+  /* .latestreleaseleft {
+    float: left;
+    margin-right: 20px;
+  }
+  .latestreleaseleft img{
+    width: 100px;
+    height: 100px;
+    float: left;
+  }
+.latestreleasecentre img {
+    width: 100px;
+    height: 100px;
+    display: block;
+} */
+  
+  h1 {
+    color: white;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+
+  }
+  h2 {
+    /* position: fixed; */
+    color: white;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    /* background-color: #aaa; */
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+   
+    background-color: #212121;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #212121;
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+/* latest release images and text  */
+/* .Latestrelease{
+    border: 3px solid black;
+    height: 300px;
+    width: 800px; 
+} */
+/* div>img{
+    
+    height: 170px;
+    width: 170px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+    text-align: center;
+} */
+
+
+article{
+    height: 90px;
+    width: 80px;
+    display: inline-block;
+
+
+}
+article>img{
+    height: 100px;
+    width: 100px;
+
+}
+/* h1{
+    color: white;
+} */
+/* #a{
+    height: 50px;
+    width: 50px;
+} */
+aside{
+    width: 1000px;
+}
+aside>article{
+    height: 150px;
+    width: 300px;
+    /* border: 2px solid white; */
+}
+article img {
+  display: inline-block;
+}
+ article p {
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  float: right;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 82px;
+  /* display: inline-block; */
+}
+/* Scroll bar for artists */
+.Scrollrow {
+  height: 136px;
+  width: 955px;
+  overflow-x: hidden;
+  overflow: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  border: none;
+/* border: 2px solid white;
+padding: 0; */
+margin-top: 0;
+/* height: 50px;
+width: 1000px; */
+}
+/* .artistrow{
+/* overflow: scroll; */
+/* overscroll-behavior: right; 
+} */
+.artist {
+display: inline-block;
+color: aliceblue;
+text-align: center;
+
+}
+.artist img {
+  height: 100px;
+  width: 100px;
+  border: 2px solid gray;
+border-radius: 50%;
+}
+/* Right column */
+.rightcolumn {
+  position:sticky;
+  float: right;
+  width: 25%;
+  height: 100%;
+  /* background-color: #212121; */
+  padding-left: 20px;
+}
+.queue {
+  width: 100%;
+  height: 100%;
+}
+.queue .leftpara {
+  float: left;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px;
+}
+.queue .queuesong {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  height: 50px;
+  width: 50px;
+}
+.queue img::after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+.afterimage {
+  float: right;
+  color: white;
+  margin-right: 120px;
+  margin-top: 0px;
+  font-size: 10px;
+}
+.likebutton {
+  width: 15px;
+  height: 15px;
+  float: right;
+  margin-left: 100px;
+  margin-top: 0;
+  margin-bottom: -5px;
+}
+.heartbutton {
+  text-decoration: none;
+}
+.heartbutton .likebutton:hover {
+  background-color: rgb(255, 255, 255);
+
+}
+/* Latest English & Hindi section*/
+.LatestEnglish {
+  height: 136px;
+  width: 955px;
+  overflow-x: hidden;
+  overflow: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  border: none;
+}
+.latestenlgish2 {
+  display: inline-block;
+color: aliceblue;
+text-align: center;
+margin: 0;
+}
+.latestenlgish2 img {
+  height: 100px;
+  width: 100px;
+  border: 1px solid gray;
+/* border-radius: 50%; */
+margin: 0;
+
+}
